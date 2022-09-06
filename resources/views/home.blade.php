@@ -20,4 +20,5 @@
         </div>
     </div>
 </div>
+<button> <a href="{{route('formulaire')}}">Formulaire d'inscription</a></button>
 @endsection

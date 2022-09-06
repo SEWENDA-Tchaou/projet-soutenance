@@ -76,12 +76,5 @@
             @yield('content')
         </main>
     </div>
-
-    <!-- formulaire pour etudiant -->
-
-   
-   
-
-     <!-- end-formulaire pour etudiant -->
 </body>
 </html>

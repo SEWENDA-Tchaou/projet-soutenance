@@ -65,8 +65,8 @@
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                <a href="{{ route('formulaire') }}"></a>   
-                                {{ __('Register') }}
+                                <a href="{{ route('formulaire') }}">{{ __('Register') }}</a>   
+                                
                                 
                                 </button>
                             </div>

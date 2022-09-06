@@ -13,7 +13,6 @@
   <body>
 
 
-
 <!-- formilaire-etudiant -->
     <div>
         <div>
@@ -83,6 +82,10 @@
                             <option value="1">Développement Web et Mobile & Web Design</option>
                             <option value="2">Infographie et zeb design</option>
                           </select>
+                    </div>
+
+                    <div class="mt-5">
+                        <input type="submit" class="form-control text-light" style="background-color: #1113F9;" value="ENVOYER" name="fichiers" id="exampleInputPassword1">
                     </div>
             </form>
         </div>
