@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+.header-black {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.enveloppe {
+    width: 33px;
+    height: 33px;
+    
+}
+
+.collapse ul li a {
+    font-size: 25px;
+}
+.mail-link {
+    margin: 0 2%;
+}
+
+.logo {
+    margin: 0 2%;
+}
+.header-black-contact {
+    color: #7CF4E7;
+}
+
+.header-nav {
+    background-image: url('../images/image.png');
+    width: 100%;
+    height: 210px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2%;
+} 
+
+.logo-background {
+    background-color: black;
+    width: 24.4%;
+    height: 30%;
+    margin-left: 2%;
+    border-radius: 0 165px 165px 0;
+}
+
+.navbar {
+    justify-content: center;
+}
+
+ul li a {
+    font-size: 25px;
+} 
+
+.invisible {
+    font-size: 5px;
+}
+
+.imag-invisible {
+    visibility: hidden;
+}
+
+/* end-header */
+
+.accueil {
+    background-image: url("../images/2-blackstudent.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.text-accueil {
+    background-color: rgba(69, 159, 210, 0.5);
+    width: 100%;
+    height: 100vh;
+}
+
+.text-accueil p{
+   font-size: 75px;
+}
+
+.block-image-accueil {
+    visibility: hidden;
+}
+.text {
+    padding-top: 20%;
+}
+
+.knowledgetchnology {
+    display: flex;
+    justify-content: space-around;
+}
+.ligne-bleu {
+    background-color: #468ADB;
+    height: 10px;
+}
+
+.propos-de-nous {
+    background-color: #E4DCDC;
+    width: 447px;
+
+}
+
+.nos-connaissances {
+    width: 447px;
+   
+}
+.computer {
+    box-shadow: 4px 0px 103px 0.8px rgb(0, 0, 0);
+}
+
+.interview {
+    background-color: #0D2058;
+}
+
+.aspirateur {
+    padding: 5% 10%;
+}
+.images-disposiifs {
+    display: flex;
+    background-color: #E4DCDC;
+    margin: 0 auto;
+   justify-content: space-around;
+    margin-top: 6%;
+}
+
+.image-etudiant {
+    background-image: url("../images/image-etudiant.webp");
+    width: 100%;
+    height: 823px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* h4 {
+    
+    width: 381px;
+    height: 279px;
+    left: 1058px;
+    top: 3154px;
+    
+    background: rgba(78, 194, 111, 0.71);
+} */
+
+/* footer */
+.black-line {
+    background-color: black;
+    border-radius: 20px;
+    height: 10px;
+}
+.black {
+    visibility: hidden;
+}
+
+.card {
+    background-color: rgba(11, 117, 224, 0.4);
+    height: 823px;
+}
+
+.newslet {
+    background-image: url("../images/newsletter.png");
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newsletter-text {
+    background-color: rgba(78, 194, 111, 0.71);
+    height: 450px;
+}
+
+.undreline {
+    border-bottom: 2px solid white;
+}
+
+.inputmail-buttont {
+    width: 590px;
+    margin: 30px;
+    border-radius: 20px;
+    height: 50px;
+    background-color: #F2EAEA;
+}
+
+.newslet ::placeholder{
+    text-align: center;
+} 
+
+.inputmail-buttone {
+    width: 590px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: #1113F9;
+    border: none;
+    height: 50px;
+}
+.checkbox {
+    margin: 0 30px;
+}
+
+.go-in-line {
+    visibility: hidden;
+}
+.copyrigth {
+    background-color: #4EC26F;
+}
+
+/* end-footer */
+@media all and (max-width: 1440px) {
+   
+
+    .inputmail-buttone {
+        width: 390px;
+    }
+
+    .inputmail-buttont {
+        width: 390px;
+        margin: 18px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .newslet input {
+        width: 290px;
+    }
+
+    .inputmail-buttone {
+        width: 290px;
+        margin: 18px;
+    }
+
+    .aspirateur {
+        width: 280px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .imag-invisible {
+        visibility: visible;
+
+   
+    }
+
+   
+    .accueil {
+        display: none;
+    }
+
+    .centre-formation {
+        margin-top: 65%;
+    }
+    .text-accueil p{
+      display: none;
+     }
+    .knowledgetchnology {
+        flex-wrap: wrap;
+    }
+    iframe {
+        width: 1000px;
+    }
+    .google-map-newsletter {
+        flex-wrap: wrap;
+    }
+    .computer {
+        width: 468px;
+    }
+    .row p {
+        font-size: 8px;
+    }
+    .aspirateur {
+        width: 200px;;
+    }
+    .newslet input, .inputmail-buttone{
+        width: 200px;
+        margin: 20px 0;
+    }
+
+}
+
+@media all and (max-width: 425px) {
+    .images-disposiifs {
+        flex-wrap: wrap;
+    }
+    .centre-formation {
+        margin-top: 55%;
+    }
+    .computer {
+        width: 398px;
+    }
+    .go-in-line {
+        visibility: collapse;
+    }
+    .newslet input, .inputmail-buttone {
+       
+        margin: 20px 90px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .computer {
+        width: 304px;
+    }
+
+    .newslet input, .inputmail-buttone{
+       
+        margin: 20px 70px;
+    }
+    table {
+        margin: 2% 2%;
+    }
+}
+
