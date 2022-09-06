@@ -50,7 +50,10 @@
                                 <a class="nav-link  active text-light p-5" href="{{ route('formation') }}">Formation</a>
                             </li>
 
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <li class="nav-item mt-5">
+                                <a class="nav-link text-light" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            
                     
                             <li class="nav-item">
                                 <a class="nav-link  active text-light p-5" href="{{ route('contact') }}">Contact</a>
