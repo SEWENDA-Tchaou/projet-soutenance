@@ -26,10 +26,14 @@ Route::get('/layouts', function () {
     return view('layouts.formation');
 })->name('formation');
 
+Route::get('/login', function () {
+    return view('passwords.login');
+})->name('login');
 
-Route::get('/inscription', function () {
-    return view('layouts.inscription');
-})->name('inscription');
+
+Route::get('/formulaire', function () {
+    return view('layouts.formulaire');
+})->name('formulaire');
 
 Route::get('/contact', function () {
     return view('layouts.contact');
