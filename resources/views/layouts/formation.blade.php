@@ -47,24 +47,24 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ">
                       <li class="nav-item">
-                          <a class="nav-link active text-light p-5" href="{{ route('acceuil') }}">Accueil</a>
+                          <a class="nav-link active text-light mx-5" href="{{ route('acceuil') }}">Accueil</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link active text-light p-5" href="{{ route('formation') }}">Formation</a>
+                          <a class="nav-link active text-light mx-5" href="{{ route('formation') }}">Formation</a>
                       </li>
                     
-                      <li class="nav-item mt-5">
-                                <a class="nav-link text-light" href="{{ route('login') }}">{{ __('Login') }}</a>
+                      <li class="nav-item ">
+                                <a class="nav-link text-light mx-5" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                       
                       <li class="nav-item">
-                          <a class="nav-link  active text-light p-5" href="{{ route('contact') }}">Contact</a>
+                          <a class="nav-link  active text-light " href="{{ route('contact') }}">Contact</a>
                       </li>
                   </ul>
               </div>
           </div>
       </nav>
-      <div class="block-image-accueil">
+      <!-- <div class="block-image-accueil">
           <img src="/assets/images/2-blackstudent.jpeg" class="imag-invisible img-fluid" alt="Etudiants">
           <div class="text-accueil">
               <div class="text">
@@ -75,16 +75,9 @@
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
   <!-- accueil -->
-  <div class="accueil">
-      <div class="text-accueil">
-          <div class="text">
-              <p class="text-light text-center">CENTRE DE FORMATION QUI REPOND</p>
-              <p class="text-light text-center">AUX EXIGENCES DE L'HEURE ! </p>
-          </div>
-      </div>
-  </div>
+  
   <!-- end-accueil -->
   <!--end navbar -->
 
@@ -106,7 +99,9 @@
       <div class="formation-line1 d-flex">
         <div class="">
           <div class="card-formation card" style="width: 18rem;">
-            <img src="./assets/images/2-blackstudent.jpeg" class="card-img-top" alt="etudiant">
+          <a href="http://www.formations-informatique-bureautique.com/formation-maintenance-informatique-reseaux.html" target="_blank">
+            <img src="./assets/images/carte_mere.jpeg" class="card-img-top" alt="etudiant">
+          </a>
             <div class="card-body">
               <h5 class="card-title text-center">Maintenance Informatique</h5>
               <p class="card-text pt-3">Durée : 2 ans</p>
@@ -117,7 +112,9 @@
 
         <div class="">
           <div class="card-formation card" style="width: 18rem;">
-            <img src="./assets/images/reseau.jpg" class="card-img-top" alt="etudiant">
+            <a href="https://fr.wikipedia.org/wiki/Réseau_de_télécommunications" target="_blank">
+              <img src="./assets/images/reseau.jpg" class="card-img-top" alt="etudiant">
+            </a>
             <div class="card-body">
               <h5 class="card-title text-center">Réseau et télecommunication</h5>
               <p class="card-text pt-3">Durée : 2 ans</p>
@@ -134,7 +131,7 @@
       <div class="formation-line2 d-flex">
         <div class="">
           <div class="card-formation card" style="width: 18rem;">
-            <img src="./assets/images/developpeur.jpg" class="card-img-top" alt="etudiant">
+            <a href="https://www.digitalschool.paris/metiers/developpement-web" target="_blank"><img src="./assets/images/developpeur.jpg" class="card-img-top" alt="etudiant"></a>
             <div class="card-body">
               <h5 class="card-title text-center">Développement Web 
                 et Mobile & Web 
@@ -147,7 +144,7 @@
 
         <div class="">
           <div class="card-formation card" style="width: 18rem;">
-            <img src="./assets/images/designer.png" class="card-img-top" alt="etudiant">
+            <a href="https://graphiste.com/blog/creer-infographie" target="_blank"><img src="./assets/images/designer.png" class="card-img-top" alt="etudiant"></a>
             <div class="card-body">
               <h5 class="card-title text-center">Infographie et zeb design</h5>
               <p class="card-text pt-3">Durée : 2 ans</p>

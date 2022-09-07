@@ -52,6 +52,7 @@
     justify-content: center;
 }
 
+
 ul li a {
     font-size: 25px;
 } 
@@ -74,7 +75,10 @@ ul li a {
     height: 100vh;
 }
 
-
+.block-image-accueil {
+    background-image: url("../images/2-blackstudent.jpeg");
+    height: 50vh;
+}
 .text-accueil {
     background-color: rgba(69, 159, 210, 0.5);
     width: 100%;
@@ -246,9 +250,9 @@ ul li a {
     }
 
    
-    .accueil {
+    /* .accueil {
         display: none;
-    }
+    } */
 
     .centre-formation {
         margin-top: 65%;
@@ -311,6 +315,10 @@ ul li a {
     }
     table {
         margin: 2% 2%;
+    }
+
+    .text-accueil, .accueil {
+        height: 21vh;
     }
 }
 

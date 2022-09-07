@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,6 +40,21 @@ Route::get('/contact', function () {
     return view('layouts.contact');
 })->name('contact');
 
+Route::post('/contact', function (Request $request) {
+
+        $renseignements = new App\Models\renseignement;
+
+
+        $renseignements->nom = request('nom');
+        $renseignements->prenom = request('prenom');
+        $renseignements->email = request('email');
+        $renseignements->numeroTel = request('numeroTel');
+        $renseignements->contenu_message = request('contenu_message');
+
+        $renseignements->save();
+
+    return 'votre nom  est:'. Request('nom').  'et votre nom est:' . Request('prenom'). 'votre mail est:'. Request('email'). 'votre numero est:'. Request('numeroTel'). 'le messageest :'. Request('contenu_message') ;
+});
 
 Auth::routes();
 

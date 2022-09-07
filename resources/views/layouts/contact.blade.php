@@ -43,25 +43,25 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link active text-light p-5" href="{{ route('acceuil') }}">Accueil</a>
+                            <a class="nav-link active text-light mx-5" href="{{ route('acceuil') }}">Accueil</a>
                         </li>
                       
                         <li class="nav-item">
-                            <a class="nav-link  active text-light p-5" href="{{ route('formation') }}">Formation</a>
+                            <a class="nav-link  active text-light mx-5" href="{{ route('formation') }}">Formation</a>
                         </li>
 
-                        <li class="nav-item mt-5">
-                                <a class="nav-link text-light" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <li class="nav-item ">
+                                <a class="nav-link text-light mx-5" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                       
                         <li class="nav-item">
-                            <a class="nav-link  active text-light p-5" href="{{ route('contact') }}">Contact</a>
+                            <a class="nav-link  active text-light mx-5" href="{{ route('contact') }}">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="block-image-accueil">
+        <!-- <div class="block-image-accueil">
             <img src="/assets/images/2-blackstudent.jpeg" class="imag-invisible img-fluid" alt="Etudiants">
             <div class="text-accueil">
                 <div class="text">
@@ -71,7 +71,7 @@
                     <p class="text-light text-center"> </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- accueil -->
     <div class="accueil">
@@ -99,7 +99,9 @@
         </h3>
        <div class="champ-formulaire d-flex">
             <div class="mt-4">
-                <form>
+                <form method="post">
+                    {{ csrf_field()}}
+
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Nom :</label>
                       <input type="text" class="form-control" name="nom" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -117,12 +119,12 @@
 
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Télephone :</label>
-                        <input type="number" class="form-control" name="nomeroTel" id="exampleInputPassword1">
+                        <input type="number" class="form-control" name="numeroTel" id="exampleInputPassword1">
                     </div>
                     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Votre message :</label>
-                        <textarea name="" id="" class="form-control" name="message" cols="" rows="8"></textarea>
+                        <textarea name="" id="" class="form-control" name="contenu_message" cols=""  rows="8"></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Envoyer</button>

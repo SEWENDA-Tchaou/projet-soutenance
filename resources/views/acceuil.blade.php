@@ -43,26 +43,26 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ">
                             <li class="nav-item">
-                                <a class="nav-link active text-light p-5" href="{{ route('acceuil') }}">Accueil</a>
+                                <a class="nav-link active text-light  mx-5" href="{{ route('acceuil') }}">Accueil</a>
                             </li>
                           
                             <li class="nav-item">
-                                <a class="nav-link  active text-light p-5" href="{{ route('formation') }}">Formation</a>
+                                <a class="nav-link  active text-light mx-5 " href="{{ route('formation') }}">Formation</a>
                             </li>
 
-                            <li class="nav-item mt-5">
-                                <a class="nav-link text-light" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <li class="nav-item ">
+                                <a class="vv nav-link text-light mx-5" style="magin: padding: 70px; " href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                             
                     
                             <li class="nav-item">
-                                <a class="nav-link  active text-light p-5" href="{{ route('contact') }}">Contact</a>
+                                <a class="nav-link  active text-light mx-5 " href="{{ route('contact') }}">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="block-image-accueil">
+            <!-- <div class="block-image-accueil">
                 <img src="/assets/images/2-blackstudent.jpeg" class="imag-invisible img-fluid" alt="Etudiants">
                 <div class="text-accueil">
                     <div class="text">
@@ -72,7 +72,7 @@
                         <p class="text-light text-center"> </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- accueil -->
         <div class="accueil">
