@@ -12,17 +12,87 @@
   </head>
   <body>
 
+ <!-- header -->
+ <div class="header">
+        <!-- header-black -->
+        <div class="header-black">
+            <a href="" class="mail-link">
+                <img src="./assets/images/nouvelle-enveloppe-de-courrier-electronique.png" class="enveloppe "
+                    alt="enveloppe electronique">
+            </a>
+            <img src="./assets/images/whatsapp.png" class="enveloppe" alt="whatsapp">
+            <div class="">
+                <p class="header-black-contact">Contactez nous</p>
+            </div>
 
-<!-- formilaire-etudiant -->
+        </div>
+        <!-- end header-black -->
+
+        <!-- navbar -->
+
+        <div class="header-nav">
+            <div class="logo-background d-flex  ">
+                <img src="./assets/images/logo.png" class="logo mt-1" alt="whatsapp">
+                <span style="color: #00CCFF;" class="fs-5 mt-1">KNOWLEDGE</span> <span
+                    style="color: #7CF4E7; margin-left: 3%;" class="fs-5 mt-1">TECHNOLOGY</span>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+
+                            <li class="nav-item ">
+                                <a class="vv nav-link text-light mx-5" style="magin: padding: 70px; " href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            
+                    
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- <div class="block-image-accueil">
+                <img src="/assets/images/2-blackstudent.jpeg" class="imag-invisible img-fluid" alt="Etudiants">
+                <div class="text-accueil">
+                    <div class="text">
+                        <p class="text-light text-center">CENTRE DE FORMATION QUI REPOND</p>
+                        <p class="text-light text-center">CENTRE DE FORMATION QUI REPOND</p>
+
+                        <p class="text-light text-center"> </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- accueil -->
+        <div class="accueil">
+            <div class="text-accueil">
+                <div class="text">
+                    <p class="text-light text-center">CENTRE DE FORMATION QUI REPOND</p>
+                    <p class="text-light text-center">AUX EXIGENCES DE L'HEURE ! </p>
+                </div>
+            </div>
+        </div>
+        <!-- end-accueil -->
+        <!--end navbar -->
+
+    </div>
+    <!-- end-header -->
+    <!-- formilaire-etudiant -->
     <div>
+
+    <h1 class="text-center pt-5">INSCRIVEZ-VOUS</h1>
+
+    <h3 class="text-center">REMPLISSER LE FORMULAIRE CI-APRÈS</h3>
+
+    <h5 class="info text-center text-#0658D3">Informations personnelle</h5>
         <div>
-            <form action="">
-                <h1 class="text-center pt-5">INSCRIVEZ-VOUS</h1>
-
-                <h3 class="text-center">REMPLISSER LE FORMULAIRE CI-APRÈS</h3>
-
-                <h5 class="info text-center text-#0658D3">Informations personnelle</h5>
-
+           
+            <form action="" method="post">
+                {{ csrf_field()}}
                 <div class="container">
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Nom :</label>
@@ -31,23 +101,23 @@
     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Prénom :</label>
-                        <input type="text" class="form-control" name="prenom" id="exampleInputPassword1">
+                        <input type="text" class="form-control" name="prenom" id="exampleInputPassword1" required>
                     </div>
     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Date de naissance :</label>
-                        <input type="date" class="form-control" name="date" id="exampleInputPassword1">
+                        <input type="date" class="form-control" name="date_Naissance" id="exampleInputPassword1" required>
                     </div>
     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Préfecture de residence :</label>
-                        <input type="text" class="form-control" name="prefecture" id="exampleInputPassword1">
+                        <input type="text" class="form-control" name="prefecture" id="exampleInputPassword1" required>
                     </div>
     
     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Sexe :</label>
-                        <select class="form-select form-control" name="sexe" aria-label="Default select example">
+                        <select class="form-select form-control" name="sexe" aria-label="Default select example" required>
                             <option selected></option>
                             <option value="1">HOMME</option>
                             <option value="2">FEMME</option>
@@ -56,18 +126,18 @@
     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Numero de telephone :</label>
-                        <input type="number" class="form-control" name="numeroTel" id="exampleInputPassword1">
+                        <input type="number" class="form-control" name="numeroTel" id="exampleInputPassword1" required>
                     </div>
     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">E-mail :</label>
-                        <input type="email" class="form-control" name="email" id="exampleInputPassword1">
+                        <input type="email" class="form-control" name="email" id="exampleInputPassword1" required>
                     </div>
                     
                     <h5 class="text-center">Pièces à fournir</h5>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Naissance, Relevet de note, Bulletins :</label>
-                        <input type="file" class="form-control" name="fichiers" id="exampleInputPassword1">
+                        <input type="file" class="form-control" name="fichiers" id="exampleInputPassword1" required>
                     </div>
     
 
@@ -75,7 +145,7 @@
 
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Filière choisie :</label>
-                        <select class="form-select form-control" name="filiere" aria-label="Default select example">
+                        <select class="form-select form-control" name="filiere" aria-label="Default select example" required>
                             <option selected></option>
                             <option value="1">Maintenance Informatique</option>
                             <option value="2">Réseau et télecommunication</option>

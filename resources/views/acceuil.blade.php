@@ -200,10 +200,12 @@
                     <p class="text-light">
                     Pour vous ,entreprises professionnelles Inscrivez vous afin de recevoir les informations par rapport
                     à nos offreset promos speciales</p>
-
-                    <input type="text" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
-                    <input type="checkbox" class="checkbox " name="checkbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
-                    <button class="inputmail-buttone text-light">VALIDER</button>
+                    <form action="/newsletter" method="post">
+                        {{ csrf_field() }}
+                        <input type="email" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
+                        <input type="checkbox" class="checkbox " name="checkbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
+                        <button type="submit" class="inputmail-buttone text-light">VALIDER</button>
+                    </form>
                </div>
             </div>
         </div>

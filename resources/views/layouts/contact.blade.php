@@ -104,27 +104,27 @@
 
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Nom :</label>
-                      <input type="text" class="form-control" name="nom" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" class="form-control" name="nom" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                     </div>
 
                     <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Prénom :</label>
-                      <input type="text" class="form-control" name="prenom" id="exampleInputPassword1">
+                      <input type="text" class="form-control" name="prenom" id="exampleInputPassword1" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">E-mail :</label>
-                        <input type="email" class="form-control" name="email" id="exampleInputPassword1">
+                        <input type="email" class="form-control" name="email" id="exampleInputPassword1" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Télephone :</label>
-                        <input type="number" class="form-control" name="numeroTel" id="exampleInputPassword1">
+                        <input type="number" class="form-control" name="numeroTel" id="exampleInputPassword1" required>
                     </div>
                     
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Votre message :</label>
-                        <textarea name="" id="" class="form-control" name="contenu_message" cols=""  rows="8"></textarea>
+                        <textarea type="text" id="" class="form-control" name="contenu_message" cols=""  rows="8" required></textarea>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">Envoyer</button>
@@ -170,9 +170,12 @@
                   Pour vous ,entreprises professionnelles Inscrivez vous afin de recevoir les informations par rapport
                   à nos offreset promos speciales</p>
 
-                  <input type="text" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
-                  <input type="checkbox" class="checkbox " name="chekbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
-                  <button class="inputmail-buttone text-light">VALIDER</button>
+                    <form action="/newsletter" method="post">
+                        {{ csrf_field() }}
+                        <input type="email" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
+                        <input type="checkbox" class="checkbox " name="checkbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
+                        <button type="submit" class="inputmail-buttone text-light">VALIDER</button>
+                    </form>
              </div>
           </div>
       </div>

@@ -231,18 +231,22 @@
 
         <div class="newslet w-100">
             <!-- <img src="./assets/images/newsletter.png" class="w-100" height="450" alt=""> -->
-           <div class="newsletter-text p-3">
-                <h4 class=" text-center pt-3 text-light"> <span>NEW</span><span
-                    class="undreline">SLET</span>TER</h4>
+          <div class="newsletter-text p-3">
+              <h4 class=" text-center pt-3 text-light"> <span>NEW</span><span
+                  class="undreline">SLET</span>TER</h4>
 
-                <p class="text-light">
-                Pour vous ,entreprises professionnelles Inscrivez vous afin de recevoir les informations par rapport
-                à nos offreset promos speciales</p>
-
-                <input type="text" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
-                <input type="checkbox" class="checkbox " name="chekbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
-                <button class="inputmail-buttone text-light">VALIDER</button>
-           </div>
+              <p class="text-light">
+              Pour vous ,entreprises professionnelles Inscrivez vous afin de recevoir les informations par rapport
+              à nos offreset promos speciales</p>
+              
+            <form action="/newsletter" method="post">
+                    {{ csrf_field() }}
+                    <input type="email" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
+                    <input type="checkbox" class="checkbox " name="checkbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
+                    <button type="submit" class="inputmail-buttone text-light">VALIDER</button>
+            </form>
+              
+          </div>
         </div>
     </div>
 </div>
