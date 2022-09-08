@@ -77,7 +77,7 @@ Route::post('/newsletter', function (Request $request) {
 
 
 // Formulaire data save on database
-Route::post('/formulaire', function (Request $request) {
+Route::post('/store', function (Request $request) {
 
     $formulaire = new App\Models\formulaire_Etudiant;
 

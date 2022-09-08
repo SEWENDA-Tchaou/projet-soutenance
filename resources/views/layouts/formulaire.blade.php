@@ -91,12 +91,12 @@
     <h5 class="info text-center text-#0658D3">Informations personnelle</h5>
         <div>
            
-            <form action="" method="post">
+            <form action="/store" method="post" class="form-formulaire" enctype="multipart/form-data">
                 {{ csrf_field()}}
                 <div class="container">
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Nom :</label>
-                        <input type="text" class="form-control" name="nom" id="exampleInputPassword1">
+                        <input type="text" class="form-control" name="nom" id="exampleInputPassword1" required>
                     </div>
     
                     <div class="mb-3">
@@ -119,8 +119,8 @@
                         <label for="exampleInputPassword1" class="form-label">Sexe :</label>
                         <select class="form-select form-control" name="sexe" aria-label="Default select example" required>
                             <option selected></option>
-                            <option value="1">HOMME</option>
-                            <option value="2">FEMME</option>
+                            <option value="FEMME">FEMME</option>
+                            <option value="FEMME">FEMME</option>
                           </select>
                     </div>
     
@@ -147,10 +147,10 @@
                         <label for="exampleInputPassword1" class="form-label">Filière choisie :</label>
                         <select class="form-select form-control" name="filiere" aria-label="Default select example" required>
                             <option selected></option>
-                            <option value="1">Maintenance Informatique</option>
-                            <option value="2">Réseau et télecommunication</option>
-                            <option value="1">Développement Web et Mobile & Web Design</option>
-                            <option value="2">Infographie et zeb design</option>
+                            <option value="Maintenance Informatique">Maintenance Informatique</option>
+                            <option value="Réseau et télecommunication">Réseau et télecommunication</option>
+                            <option value="Développement Web et Mobile & Web Design">Développement Web et Mobile & Web Design</option>
+                            <option value="Infographie et Web design">Infographie et Web design</option>
                           </select>
                     </div>
 
@@ -183,9 +183,12 @@
                         Pour vous ,entreprises professionnelles Inscrivez vous afin de recevoir les informations par rapport
                         à nos offreset promos speciales</p>
       
-                        <input type="text" class="inputmail-buttont" placeholder="votre adresse e-mail" required> <br class="go-in-line">
-                        <input type="checkbox" class="checkbox " required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
-                        <button class="inputmail-buttone text-light">VALIDER</button>
+                        <form action="/newsletter" method="post">
+                        {{ csrf_field() }}
+                        <input type="email" class="inputmail-buttont" name="email" placeholder="Votre adresse e-mail" required> <br class="go-in-line">
+                        <input type="checkbox" class="checkbox " name="checkbox" required> <span class="text-light"> J'accepte que knowledge tchnology m'envoie des mails</span> <br>
+                        <button type="submit" class="inputmail-buttone text-light">VALIDER</button>
+                    </form>
                    </div>
                 </div>
             </div>

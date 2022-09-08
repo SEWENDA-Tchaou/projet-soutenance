@@ -13,11 +13,15 @@
  <div class="header">
         <!-- header-black -->
         <div class="header-black">
-            <a href="" class="mail-link">
+            <a href="mailto:knowledgetchnology@gmail.com" class="mail-link">
                 <img src="./assets/images/nouvelle-enveloppe-de-courrier-electronique.png" class="enveloppe "
                     alt="enveloppe electronique">
             </a>
+
+            <a href="https://wa.me/0022891622497?text=Welcome%20to%20Knowledge%20Technology%20!">
             <img src="./assets/images/whatsapp.png" class="enveloppe" alt="whatsapp">
+            </a>
+
             <div class="">
                 <p class="header-black-contact">Contactez nous</p>
             </div>
@@ -92,7 +96,7 @@
     <!-- Notre centre de formation -->
 
     <div class="centre-formation">
-        <h1 class="text-center mt-5">Notre centre de formation:</h1>
+        <h1 class="text-center container mt-5">Notre centre de formation:</h1>
 
         <div class="container">
             <div class="knowledgetchnology mt-5">
@@ -170,10 +174,6 @@
                         corporis enim qui alias illo qui reiciendis voluptas aut voluptatem debitis. Eum dolore amet
                         autem numquam qui perspiciatis neque ea inventore unde sit odio omnis ut repellendus repellendus
                         qui commodi nulla.
-
-                        Et voluptas dolore et earum aperiam sit illum voluptatem. Qui nulla iusto aut voluptatem
-                        internos ut numquam consequatur aut omnis vero ex molestiae reprehenderit aut fugiat velit. Ut
-                        explicabo quia quia illum qui minus praesentium qui tenetur omnis non quam voluptatem.
                     </p>
                 </div>
             </div>
